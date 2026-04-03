@@ -13,7 +13,7 @@ Uma landing page moderna, responsiva e interativa desenvolvida para um prestador
 ---
 
 ## Demonstração
-**Link do Projeto:** 
+**Link do Projeto:** https://devgch.github.io/responsive_gardening_site/
 
 ---
 
