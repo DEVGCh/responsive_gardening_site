@@ -1,6 +1,8 @@
 # O Jardineiro do Bairro - Landing Page
 
-Uma landing page moderna, responsiva e interativa desenvolvida para um prestador de serviços de jardinagem e paisagismo. Este projeto foi criado para demonstrar competências em **Front-End Development**, com foco em experiência do utilizador (UX) e conversão.
+Esta é uma landing page desenvolvida como um projeto prático para fins de estudo (empresa fictícia). O objetivo foi aplicar técnicas de Front-End e UX/UI num cenário de serviços do mundo real.
+
+Nota: Os testemunhos e figuras públicas presentes no site são meramente ilustrativos, utilizados para demonstrar o layout e a funcionalidade da secção de Prova Social.
 
 ## Tecnologias Utilizadas
 
