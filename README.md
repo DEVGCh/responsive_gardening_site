@@ -12,6 +12,11 @@ Uma landing page moderna, responsiva e interativa desenvolvida para um prestador
 
 ---
 
+## Demonstração
+**Link do Projeto:** https://devgch.github.io/responsive_gardening_site/
+
+---
+
 ## Funcionalidades Principais
 
 * **Design Responsivo:** Adaptado para Desktop, Tablets e Smartphones (Mobile-first mindset).
