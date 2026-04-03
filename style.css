@@ -1,0 +1,514 @@
+/* GERAL */
+
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding-top: 80px; 
+    box-sizing: border-box;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+}
+
+.cabecalho .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho .logo img {
+    height: 90px; 
+}
+
+.cabecalho .nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho .nav-menu li {
+    margin-left: 0;
+}
+
+.cabecalho .nav-menu a {
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.cabecalho .nav-menu a:hover {
+    color: #4CAF50; 
+}
+
+.btn-principal {
+    background-color: #e8a600; 
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease; 
+    border: none; 
+    cursor: pointer; 
+    margin-left: 20px;
+    animation: pulsar 1.5s infinite ease-in-out;
+}
+
+.btn-principal:hover {
+    background-color: #e8a600;
+    animation: none;     
+}
+
+
+
+
+/* SECÇÃO HERO - ORÇAMENTO */
+
+.sec-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Imagens/fundo.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    position: relative;
+    min-height: 635px;
+}
+
+.sec-hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.conteudo-hero {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 40px;
+}
+
+.conteudo-hero h1 {
+    font-size: 51px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.passos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.item-passo {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.item-passo i {
+    font-size: 48px;
+    color: #4CAF50; 
+    margin-bottom: 15px;
+}
+
+.item-passo p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff; 
+}
+
+/* Formulário de Orçamento */
+.caixa-orcamento {
+    background-color: #4CAF50;
+    padding: 40px; 
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    width: 450px;
+}
+
+.form-orcamento {
+    padding: 0 10px;
+}
+
+.form-orcamento h2 {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+.grupo-campo {
+    margin-bottom: 20px;
+}
+
+.grupo-campo input[type="text"],
+.grupo-campo input[type="email"],
+.grupo-campo select {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    box-sizing: border-box;
+}
+
+.grupo-campo input::placeholder,
+.grupo-campo select {
+    color: #777;
+}
+
+.btn-enviar {
+    background-color: #fff;
+    color: #4CAF50;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.btn-enviar:hover {
+    background-color: #eee;
+    color: #e8a600;
+}
+
+.msg-form {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+
+
+/* TESTEMUNHOS */
+
+.sec-testemunhos {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+    text-align: center;
+    min-height: 650px;
+}
+
+.sec-testemunhos h2 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.grid-testemunhos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card-testemunho {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card-testemunho img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #4CAF50;
+}
+
+.card-testemunho figcaption { 
+    font-size: 19px;
+    color: #555;
+    margin-bottom: 15px;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.card-testemunho .autor-testemunho { 
+    font-weight: 600;
+    color: #777;
+    margin-top: 10px; 
+}
+
+
+
+
+/* SERVIÇOS */
+
+.sec-servicos {
+    background-color: #fff;
+    padding: 75px 0;
+    text-align: center;
+}
+
+.sec-servicos h2 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.grid-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.item-servico {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.item-servico img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.item-servico:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(76, 175, 80, 0.85); 
+    color: #fff;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 19px;
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 0.4s ease;
+}
+
+.item-servico:hover .overlay {
+    opacity: 1; 
+}
+
+/* BANNER PROMOÇÃO - ASIDE */
+.promocao {
+    background-color: #e8a600;
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 80px auto 0;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.promocao h3 {
+    font-size: 29px;
+    margin-bottom: 15px;
+}
+
+.promocao p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* RODAPÉ */
+
+.rodape {
+    background-color: #222;
+    color: #eee;
+    padding: 40px 0 20px;
+    text-align: center;
+}
+
+.rodape .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    margin-bottom: 30px;
+}
+
+.coluna-rodape {
+    flex: 1;
+    min-width: 250px; 
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.coluna-rodape.coluna-logo img {
+    height: 150px;
+    filter: brightness(0) invert(1); 
+}
+
+.coluna-rodape.coluna-contacto p {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.coluna-rodape.coluna-contacto i {
+    margin-right: 10px;
+    color: #4CAF50;
+    font-size: 18px;
+}
+
+.coluna-rodape.coluna-social {
+    text-align: right;
+}
+
+.coluna-rodape.coluna-social a {
+    color: #eee;
+    font-size: 24px;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.coluna-rodape.coluna-social a:hover {
+    color: #4CAF50;
+}
+
+.copyright {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+    text-align: center;
+    clear: both; 
+}
+
+
+
+
+/* ANIMAÇÃO DO BOTÃO */
+
+@keyframes pulsar {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+
+
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 992px) {
+
+    .cabecalho .nav-menu ul {
+        gap: 15px; 
+    }
+    
+    .cabecalho .nav-menu a {
+        font-size: 14px; 
+    }
+
+    .btn-principal {
+        margin-left: 10px;
+        padding: 8px 16px;
+        animation: pulsar 2s infinite ease-in-out;
+    }
+    
+    .cabecalho .logo img {
+        height: 50px;
+    }
+    
+    .sec-hero {
+        min-height: auto;
+        padding: 60px 0;
+    }
+    
+    .sec-hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .conteudo-hero {
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+    
+    .conteudo-hero h1 {
+        font-size: 36px;
+    }
+    
+    .passos {
+        margin-top: 40px;
+    }
+
+    .caixa-orcamento {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .sec-testemunhos {
+        min-height: auto;
+        padding: 60px 0;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .cabecalho .nav-menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Correção da navegação */
+.sec-hero,
+.sec-testemunhos,
+.sec-servicos,
+.rodape {
+    scroll-margin-top: 100px; 
+}

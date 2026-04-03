@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Jardineiro do Bairro</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> <!-- Importa Open Sans do Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Importa ícones Font Awesome -->
+
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <div class="container">
+            
+            <div class="logo">
+                <img src="/Imagens/logo.png" alt="JB Logo">
+            </div>
+            
+            <nav class="nav-menu">
+                <ul> 
+                    <li><a href="#orcamento">Orçamento</a></li>
+                    <li><a href="#testemunhos">Testemunhos</a></li> 
+                    <li><a href="#servicos">Serviços</a></li> 
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <button id="btnAgendar" class="btn-principal" onclick="agendarChamada()">Agendar Chamada Gratuita</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Secção Hero - Orçamento Rápido -->
+        <section class="sec-hero" id="orcamento">
+            <div class="container">
+                <div class="conteudo-hero"> 
+                    <h1>3 Passos para Mudar o Seu Jardim</h1>
+                    <div class="passos">
+                        <div class="item-passo">
+                            <i class="fas fa-edit"></i>  <!-- Font Awesome lapis -->
+                            <p>1. Descreva o Serviço</p>
+                        </div>
+                        <div class="item-passo">
+                            <i class="fas fa-receipt"></i> <!-- Font Awesome talao -->
+                            <p>2. Receba a sua Proposta</p>
+                        </div>
+                        <div class="item-passo">
+                            <i class="fas fa-calendar-alt"></i> <!-- Font Awesome calendario -->
+                            <p>3. Agende o Serviço</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulário de Orçamento -->
+                <div class="caixa-orcamento">
+                    <form id="formOrcamento" class="form-orcamento">
+                        <h2>Peça já o seu Orçamento Grátis!</h2>
+                        <div class="grupo-campo">
+                            <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                        </div>
+                        <div class="grupo-campo">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="grupo-campo">
+                            <select id="tipo-servico" name="tipo-servico" required>
+                                <option value="">Tipo de Serviço Desejado</option>
+                                <option value="criacao">Construção de Jardins</option>
+                                <option value="manutencao">Manutenção de Jardins</option>
+                                <option value="rega">Sistemas de Rega</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn-enviar" onclick="enviarOrcamento()">Pedir Orçamento</button>
+                        <div id="mensagemForm" class="msg-form"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testemunhos -->
+        <section class="sec-testemunhos" id="testemunhos">
+            <div class="container">
+                <h2>Testemunhos</h2>
+                <div class="grid-testemunhos">
+                    
+                    <article class="card-testemunho">
+                        <figure>
+                            <img src="/Imagens/AnaMalhoa.jpg" alt="Foto da Ana Malhoa">
+                            <figcaption>"O meu jardim nunca esteve tão bonito! Profissionalismo e atenção ao detalhe."</figcaption>
+                        </figure>
+                        <p class="autor-testemunho">Ana Malhoa</p>
+                    </article>
+
+                    <article class="card-testemunho">
+                        <figure>
+                            <img src="/Imagens/PauloFutre.jpg" alt="Foto do Paulo Futre">
+                            <figcaption>"Serviço fácil e rápido! Orçamento em menos de 24h."</figcaption>
+                        </figure>
+                        <p class="autor-testemunho">Paulo Futre</p>
+                    </article>
+
+                    <article class="card-testemunho">
+                        <figure>
+                            <img src="/Imagens/PalmiraSilva.jpg" alt="Foto da Palmira Silva">
+                            <figcaption>"Equipa simpática, serviço de excelência! Recomendo!"</figcaption>
+                        </figure>
+                        <p class="autor-testemunho">Palmira Silva</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        
+        <!-- Serviços -->
+        <section class="sec-servicos" id="servicos">
+            <div class="container">
+                <h2>Os Nossos Serviços</h2>
+                <div class="grid-servicos">
+                    <div class="item-servico">
+                        <img src="/Imagens/construcao.jpg" alt="Jardim Moderno">
+                        <div class="overlay">Construção de Jardins</div>
+                    </div>
+                    <div class="item-servico">
+                        <img src="/Imagens/relva.jpg" alt="Manutenção de Relva">
+                        <div class="overlay">Instalação e Manutenção de Relvados</div>
+                    </div>
+                    <div class="item-servico">
+                        <img src="/Imagens/rega.jpg" alt="Instalação de Rega">
+                        <div class="overlay">Instalação de Sistema de Rega</div>
+                    </div>
+                    <div class="item-servico">
+                        <img src="/Imagens/canteiro.jpg" alt="Canteiros e Flores">
+                        <div class="overlay">Construção de Canteiros e Floreiras</div>
+                    </div>
+                    <div class="item-servico">
+                        <img src="/Imagens/rockgarden.jpg" alt="Paisagismo com Rocha">
+                        <div class="overlay">Paisagismo com Elementos Naturais</div>
+                    </div>
+                    <div class="item-servico">
+                        <img src="/Imagens/poda.jpg" alt="Limpeza de Árvores">
+                        <div class="overlay">Poda de Árvores e Arbustos</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Promoção -->
+            <aside class="promocao">
+                <h3>🌿 Promoção de Novembro!</h3>
+                <p>10% de desconto em todos os serviços de manutenção de jardins.</p>
+                <p><strong>Válido até 30/11/2025</strong></p>
+            </aside>
+        </section>
+
+    </main>
+
+    <!-- Rodapé - Contactos -->
+    <footer class="rodape" id="contacto">
+        <div class="container">
+            <div class="coluna-rodape coluna-logo">
+                <img src="/Imagens/logo.png" alt="JB Logo">
+            </div>
+            <div class="coluna-rodape coluna-contacto">
+                <p><i class="fas fa-phone-alt"></i> (+351) 91 234 56 78</p>
+                <p><i class="fas fa-envelope"></i> info@ojardineirodobairro.pt</p>
+                <p><i class="fas fa-map-marker-alt"></i> Rua das Flores, 123, Lisboa, Portugal</p>
+            </div>
+            <div class="coluna-rodape coluna-social">
+                <a href="https://www.facebook.com/?locale=pt_PT" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/?lang=pt" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 O Jardineiro do Bairro. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
